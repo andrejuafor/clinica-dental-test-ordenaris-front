@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/branding/colors.scss';
+@import './assets/branding/buttons.scss';
+@import './assets/branding/typography.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "Inter", sans-serif;
+  color: $black-primary;
+}

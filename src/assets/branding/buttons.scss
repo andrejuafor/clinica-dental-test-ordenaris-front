@@ -27,6 +27,12 @@
     color: $blue-primary;
     border: 1px solid $blue-primary;
   }
+
+  &.btn-white-outline {
+    background: #ffffff00;
+    color: $white;
+    border: 1px solid $white;
+  }
 }
 
 .btn:hover {
@@ -39,5 +45,11 @@
   &.btn-blue-outline:hover {
     background: $blue-primary;
     color: $white;
+  }
+
+  &.btn-white-outline:hover {
+    background: #ffffff00;
+    color: $blue-dark;
+    border: 1px solid $blue-dark;
   }
 }

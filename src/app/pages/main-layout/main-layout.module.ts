@@ -7,6 +7,7 @@ import { HowToGetServiceComponent } from './features/how-to-get-service/how-to-g
 import { AlwaysLoughComponent } from './features/always-lough/always-lough.component';
 import { WhatMakesUsComponent } from './features/what-makes-us/what-makes-us.component';
 import { SharedModule } from 'src/app/modules/shared/shared.module';
+import { LetUsBrightenComponent } from './features/let-us-brighten/let-us-brighten.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SharedModule } from 'src/app/modules/shared/shared.module';
     HowToGetServiceComponent,
     MainLayoutComponent,
     AlwaysLoughComponent,
-    WhatMakesUsComponent
+    WhatMakesUsComponent,
+    LetUsBrightenComponent
   ],
   imports: [
     CommonModule,

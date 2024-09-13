@@ -58,3 +58,30 @@ h5 {
   font-weight: 500;
   line-height: 32px;
 }
+
+@media (max-width: 780px) {
+  h1 {
+    font-size: max(3.89vw, 40px);
+    line-height: max(5.14vw, 50px);
+  }
+
+  h2 {
+    font-size: max(3.33vw, 32px);
+    line-height: max(4.44vw, 45px);
+  }
+
+  h3 {
+    font-size: max(2.92vw, 26px);
+    line-height: max(3.19vw, 35px);
+  }
+
+  h4 {
+    font-size: max(2.5vw, 20px);
+    line-height: max(4.17vw, 35px);
+  }
+
+  h5 {
+    font-size: max(1.67vw, 18px);
+    line-height: max(2.36vw, 25px);
+  }
+}

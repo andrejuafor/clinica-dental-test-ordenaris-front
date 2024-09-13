@@ -11,3 +11,22 @@
   font-family: "Inter", sans-serif;
   color: $black-primary;
 }
+
+a {
+  color: $black-secondary;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &.a-white {
+    color: $white;
+  }
+}
+
+a:hover {
+  color: $blue-primary;
+
+  &.a-white {
+    color: $blue-secondary;
+  }
+}

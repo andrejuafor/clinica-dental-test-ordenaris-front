@@ -1,10 +1,9 @@
 @import './colors.scss';
 
 .btn {
-  width: 100%;
   min-width: 50px;
   height: 50px;
-  padding: 0 1em;
+  padding: 0 2em;
   border: 0;
   text-align: center;
   border-radius: 8px;
@@ -13,8 +12,13 @@
   cursor: pointer;
   transition: 0.2s;
 
+  &.btn-complete {
+    width: 100%;
+  }
+
   &.btn-blue-primary {
     background: $blue-primary;
+    border: 1px solid $blue-primary;
     color: $white;
   }
 

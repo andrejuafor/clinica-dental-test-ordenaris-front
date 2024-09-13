@@ -1,0 +1,18 @@
+<section>
+  <div class="titles-wrapper">
+    <h3 class="title-txt">
+      How to get our service?
+    </h3>
+    <p class="p-xl subtitle-txt">
+      Just follow these simple steps
+    </p>
+  </div>
+  <div class="cards-wrapper">
+    <div class="card" *ngFor="let item of cardList">
+      <img [src]="item.icon" alt="icon">
+      <p>
+        {{ item.title }}
+      </p>
+    </div>
+  </div>
+</section>

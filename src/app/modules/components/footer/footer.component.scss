@@ -4,9 +4,6 @@ footer {
   width: 100%;
   height: 140px;
   margin: 0 auto;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 
   p {
     color: $white;
@@ -29,7 +26,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 65px;
-  background-color: $blue-hight;
+  background-color: $blue-dark;
 }
 
 .footer-top-wrapper {
@@ -73,4 +70,30 @@ footer {
 
 .address-title-txt {
   margin-bottom: 0.5em;
+}
+
+@media (max-width: 900px) {
+  .footer-top {
+    height: initial;
+    padding: 2em;
+  }
+
+  .footer-top__column {
+    width: 100%;
+    margin: 0 0 3em 0;
+
+    &:nth-child(1) {
+      margin: 0 0 3em 0;
+    }
+  }
+
+  .footer-top__column-title {
+    margin-bottom: 0.5em;
+  }
+
+  .footer-top-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }

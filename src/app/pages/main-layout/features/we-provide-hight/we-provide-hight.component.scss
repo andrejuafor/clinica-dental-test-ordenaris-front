@@ -1,0 +1,81 @@
+@import '../../../../../assets/branding/colors.scss';
+
+section {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0 5em 0;
+}
+
+.title-colored-word {
+  color: $yellow-primary;
+}
+
+.title-section-wrapper {
+  width: 50%;
+  padding-left: 3.5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.banner-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 80%;
+  }
+}
+
+.title-txt {
+  margin-bottom: 0.2em;
+}
+
+.subtitle-txt {
+  color: $black-777;
+  margin-bottom: 1em;
+}
+
+.title-actions-wrapper {
+  width: 370px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 780px) {
+  section {
+    flex-direction: column-reverse;
+  }
+
+  .title-txt {
+    text-align: center;
+  }
+
+  .subtitle-txt {
+    text-align: center;
+  }
+
+  .title-section-wrapper {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+  }
+
+  .banner-wrapper {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+}
+
+@media (max-width: 400px) {
+  .title-actions-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-wrapper {
+    margin-bottom: 1em;
+  }
+}

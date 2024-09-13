@@ -1,0 +1,35 @@
+<section>
+  <div class="titles-wrapper">
+    <div class="title">
+      <h2>Always <span class="title-colored-word">Lough</span></h2>
+      <h2>Whenever Its Possible</h2>
+    </div>
+    <div class="subtitle">
+      <p class="p-lg">
+        We also offer treatments that improve the appearance of your smile giving you the confidence boost you deserve.
+        The process or our treatment below.
+      </p>
+    </div>
+  </div>
+  <div class="line-container">
+    <div class="line"></div>
+  </div>
+  <div class="info-wrapper">
+    <div class="info-illustration">
+      <img src="/assets/media/img/always-lough-illustration.png" alt="Always lough">
+    </div>
+    <div class="what-we-provide">
+      <h5 class="what-we-provide-title-txt">
+        WHAT WE PROVIDE
+      </h5>
+      <ul class="what-we-provide-list-wrapper">
+        <li class="what-we-provide-list-item" *ngFor="let item of whatWeProvideList">
+          <img src="/assets/media/icons/shield.png" alt="shield">
+          {{ item.title }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="background">
+  </div>
+</section>

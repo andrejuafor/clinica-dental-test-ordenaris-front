@@ -4,12 +4,14 @@ import { WeProvideHightComponent } from './features/we-provide-hight/we-provide-
 import { MainLayoutComponent } from './main-layout.component';
 import { MainLayoutRoutingModule } from './main-layout-routing.module';
 import { HowToGetServiceComponent } from './features/how-to-get-service/how-to-get-service.component';
+import { AlwaysLoughComponent } from './features/always-lough/always-lough.component';
 
 @NgModule({
   declarations: [
     WeProvideHightComponent,
     HowToGetServiceComponent,
-    MainLayoutComponent
+    MainLayoutComponent,
+    AlwaysLoughComponent
   ],
   imports: [
     CommonModule,

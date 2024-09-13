@@ -1,0 +1,33 @@
+@import '../../../../../assets/branding/colors.scss';
+
+section {
+  margin: 3em 0 5em 0;
+  padding: 0 2em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.header-left {
+  line-height: 51px;
+
+  span {
+    font-size: 60px;
+  }
+}
+
+.header-right {
+  span {
+    color: $yellow-primary;
+  }
+}
+
+.cards-list-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

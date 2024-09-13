@@ -1,0 +1,16 @@
+<section>
+  <div class="header">
+    <h2 class="header-left">
+      What Makes Us More <br>
+      <span>Special</span>
+    </h2>
+    <h1 class="header-right">
+      KEY <span>FEATURE</span>
+    </h1>
+  </div>
+  <div class="cards-list-wrapper">
+    <app-what-makes-us-card *ngFor="let item of cardList" [icon]="item.icon" [title]="item.title"
+      [description]="item.description">
+    </app-what-makes-us-card>
+  </div>
+</section>

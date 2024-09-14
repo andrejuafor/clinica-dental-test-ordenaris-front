@@ -11,6 +11,7 @@ import { LetUsBrightenComponent } from './features/let-us-brighten/let-us-bright
 import { WhoWeAreComponent } from './features/who-we-are/who-we-are.component';
 import { MeetOurDoctorsComponent } from './features/meet-our-doctors/meet-our-doctors.component';
 import { SwiperModule } from 'ngx-swiper-wrapper';
+import { WhatOurClientSaysComponent } from './features/what-our-client-says/what-our-client-says.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SwiperModule } from 'ngx-swiper-wrapper';
     WhatMakesUsComponent,
     LetUsBrightenComponent,
     WhoWeAreComponent,
-    MeetOurDoctorsComponent
+    MeetOurDoctorsComponent,
+    WhatOurClientSaysComponent
   ],
   imports: [
     CommonModule,

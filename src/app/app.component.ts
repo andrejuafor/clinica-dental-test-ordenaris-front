@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TokenService } from './services/token.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'clinica-dental-test-ordenaris-front';
+
+  constructor(private tokenService: TokenService) { }
+
+  ngOnInit() {
+    this.tokenService.fetchToken().subscribe(data => {
+      this.tokenService.setToken(data.uuid);
+    });
+  }
 }

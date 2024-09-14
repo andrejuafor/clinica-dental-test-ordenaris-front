@@ -9,6 +9,8 @@ import { WhatMakesUsComponent } from './features/what-makes-us/what-makes-us.com
 import { SharedModule } from 'src/app/modules/shared/shared.module';
 import { LetUsBrightenComponent } from './features/let-us-brighten/let-us-brighten.component';
 import { WhoWeAreComponent } from './features/who-we-are/who-we-are.component';
+import { MeetOurDoctorsComponent } from './features/meet-our-doctors/meet-our-doctors.component';
+import { SwiperModule } from 'ngx-swiper-wrapper';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { WhoWeAreComponent } from './features/who-we-are/who-we-are.component';
     AlwaysLoughComponent,
     WhatMakesUsComponent,
     LetUsBrightenComponent,
-    WhoWeAreComponent
+    WhoWeAreComponent,
+    MeetOurDoctorsComponent
   ],
   imports: [
     CommonModule,
     MainLayoutRoutingModule,
+    SwiperModule,
     SharedModule
   ]
 })

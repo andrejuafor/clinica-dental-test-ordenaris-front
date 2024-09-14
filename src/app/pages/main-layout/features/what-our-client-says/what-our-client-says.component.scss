@@ -1,0 +1,37 @@
+@import '../../../../../assets/branding/colors.scss';
+
+section {
+  height: 662px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $blue-primary;
+  padding: 0 4em;
+
+  h4,
+  p {
+    color: $white;
+  }
+}
+
+.our-client-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2em;
+}
+
+.our-client-info {
+  width: 706px;
+  height: 394px;
+  padding-top: 0.5em;
+  border-top: 1px solid $grey;
+}
+
+.our-client-info-title {
+  margin-bottom: 1em;
+}
+
+.our-client-info-icon {
+  margin-bottom: 1em;
+}

@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="doctor-profile-wrapper">
+    <img [src]="photo || 'https://www.hospitalhumanitario.org/wp-content/uploads/2021/03/sandraGonzalez-sq.jpg'"
+      alt="Doctor Profile">
+  </div>
+  <p class="p-lg">
+    {{ doctorName }}
+  </p>
+  <p class="p-sm light-txt">
+    {{ specialty }}
+  </p>
+  <p class="p-sm light-txt supporting-txt">
+    {{ university }}
+  </p>
+  <button class="btn btn-blue-outline">
+    Appoinment
+  </button>
+</div>

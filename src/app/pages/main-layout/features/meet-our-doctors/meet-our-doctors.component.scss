@@ -3,6 +3,7 @@
 section {
   margin: 3em 0 5em 0;
   padding: 0 2em;
+  position: relative;
 }
 
 .header {
@@ -24,4 +25,28 @@ section {
   span {
     color: $yellow-primary;
   }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev {
+  left: 45px;
+}
+
+.swiper-button-next {
+  right: 45px;
+}
+
+.doctors-info-wrapper {
+  padding: 0 5em;
 }

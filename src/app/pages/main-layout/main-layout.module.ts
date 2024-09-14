@@ -10,6 +10,7 @@ import { SharedModule } from 'src/app/modules/shared/shared.module';
 import { LetUsBrightenComponent } from './features/let-us-brighten/let-us-brighten.component';
 import { WhoWeAreComponent } from './features/who-we-are/who-we-are.component';
 import { MeetOurDoctorsComponent } from './features/meet-our-doctors/meet-our-doctors.component';
+import { SwiperModule } from 'ngx-swiper-wrapper';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { MeetOurDoctorsComponent } from './features/meet-our-doctors/meet-our-do
   imports: [
     CommonModule,
     MainLayoutRoutingModule,
+    SwiperModule,
     SharedModule
   ]
 })

@@ -2,10 +2,12 @@
 
 .card {
   max-width: 248px;
+  height: 430px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 .doctor-profile-wrapper {

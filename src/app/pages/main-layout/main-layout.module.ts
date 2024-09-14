@@ -8,6 +8,7 @@ import { AlwaysLoughComponent } from './features/always-lough/always-lough.compo
 import { WhatMakesUsComponent } from './features/what-makes-us/what-makes-us.component';
 import { SharedModule } from 'src/app/modules/shared/shared.module';
 import { LetUsBrightenComponent } from './features/let-us-brighten/let-us-brighten.component';
+import { WhoWeAreComponent } from './features/who-we-are/who-we-are.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LetUsBrightenComponent } from './features/let-us-brighten/let-us-bright
     MainLayoutComponent,
     AlwaysLoughComponent,
     WhatMakesUsComponent,
-    LetUsBrightenComponent
+    LetUsBrightenComponent,
+    WhoWeAreComponent
   ],
   imports: [
     CommonModule,

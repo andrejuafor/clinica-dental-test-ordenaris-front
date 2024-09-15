@@ -23,3 +23,10 @@
     margin-bottom: 0.5em;
   }
 }
+
+@media (max-width: 394px) {
+  .card {
+    width: 100%;
+    margin: 0 0 1em 0;
+  }
+}

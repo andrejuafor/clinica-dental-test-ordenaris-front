@@ -31,3 +31,20 @@ section {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+@media (max-width: 894px) {
+  .cards-list-wrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 690px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header-left,
+  .header-right {
+    width: 100%;
+  }
+}

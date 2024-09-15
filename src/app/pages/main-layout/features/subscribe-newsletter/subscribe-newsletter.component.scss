@@ -17,6 +17,7 @@ section {
   width: 1200px;
   height: 316px;
   border-radius: 20px;
+  padding: 0 1em;
   background-color: $blue-dark;
   display: flex;
   flex-direction: column;
@@ -25,7 +26,8 @@ section {
 }
 
 .form {
-  width: 750px;
+  width: 100%;
+  max-width: 750px;
 }
 
 .input-custom {
@@ -61,5 +63,12 @@ section {
   &.right {
     bottom: 0;
     right: 0;
+  }
+}
+
+@media (max-width: 690px) {
+  .form-row {
+    display: flex;
+    flex-direction: column;
   }
 }

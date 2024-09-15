@@ -25,7 +25,8 @@ section {
 
 .description-txt {
   color: $white;
-  width: 904px;
+  width: 100%;
+  max-width: 904px;
   margin-bottom: 2em;
 }
 
@@ -33,4 +34,10 @@ section {
   height: 65px;
   padding: 0 4em;
   font-weight: normal;
+}
+
+@media (max-width: 690px) {
+  section {
+    padding: 0 1.5em;
+  }
 }

@@ -1,12 +1,11 @@
 @import '../../../../../assets/branding/colors.scss';
 
 section {
-  height: 662px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: $blue-primary;
-  padding: 0 4em;
+  padding: 10em 4em 2em;
 
   h4,
   p {
@@ -22,7 +21,8 @@ section {
 }
 
 .our-client-info {
-  width: 706px;
+  width: 100%;
+  max-width: 706px;
   height: 394px;
   padding-top: 0.5em;
   border-top: 1px solid $grey;
@@ -34,4 +34,14 @@ section {
 
 .our-client-info-icon {
   margin-bottom: 1em;
+}
+
+@media (max-width: 800px) {
+  section {
+    flex-direction: column;
+  }
+
+  .our-client-banner {
+    margin: 0 2em 2em 0;
+  }
 }

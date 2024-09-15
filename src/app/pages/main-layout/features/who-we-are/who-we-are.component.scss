@@ -31,16 +31,26 @@ section {
 
 .info-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .info-card {
+  width: 100%;
   background-color: $white-bg;
   border-radius: 16px;
   padding: 48px;
 }
 
+.info-left-container {
+  max-width: 500px;
+
+  img {
+    width: 100%;
+  }
+}
+
 .info-right-container {
+  max-width: 700px;
   padding: 0 3.5em;
 }
 
@@ -50,4 +60,21 @@ section {
 
 .info-card-description {
   color: $black-777;
+}
+
+
+@media (max-width: 690px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header-left,
+  .header-right {
+    width: 100%;
+    text-align: left;
+  }
+
+  .info-wrapper {
+    flex-wrap: wrap;
+  }
 }

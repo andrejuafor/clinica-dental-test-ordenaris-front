@@ -1,0 +1,65 @@
+@import '../../../../../assets/branding/colors.scss';
+
+section {
+  padding: 5em 2em;
+  background-color: $white-bg;
+  display: flex;
+  justify-content: center;
+}
+
+.card-title {
+  margin-bottom: 0.8em;
+  color: $white;
+}
+
+.card {
+  position: relative;
+  width: 1200px;
+  height: 316px;
+  border-radius: 20px;
+  background-color: $blue-dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 750px;
+}
+
+.input-custom {
+  height: 58px;
+  background-color: #FFFFFF4D;
+  border: 1 solid #FFFFFF4D;
+  color: $white;
+}
+
+.btn-custom {
+  height: 58px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: $white;
+}
+
+.btn-custom:hover {
+  height: 58px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #FFFFFF4D;
+  color: $white;
+}
+
+.line {
+  position: absolute;
+
+  &.left {
+    top: 0;
+    left: 0;
+  }
+
+  &.right {
+    bottom: 0;
+    right: 0;
+  }
+}

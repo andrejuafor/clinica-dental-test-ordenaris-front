@@ -1,0 +1,48 @@
+@import '../../../../../assets/branding/colors.scss';
+
+section {
+  margin: 3em 0 0 0;
+  padding: 0 2em 5em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.header-left {
+  span {
+    margin-left: 0.25em;
+    color: $yellow-primary;
+  }
+}
+
+.header-right {
+  line-height: 51px;
+  text-align: right;
+
+  span {
+    font-size: 60px;
+  }
+}
+
+.body-section {
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  max-width: 370px;
+  margin-right: 2em;
+
+  img {
+    width: 100%;
+  }
+}
+
+.form {
+  width: 700px;
+  padding: 2em;
+}

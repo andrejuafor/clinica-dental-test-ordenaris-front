@@ -12,6 +12,9 @@ import { WhoWeAreComponent } from './features/who-we-are/who-we-are.component';
 import { MeetOurDoctorsComponent } from './features/meet-our-doctors/meet-our-doctors.component';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { WhatOurClientSaysComponent } from './features/what-our-client-says/what-our-client-says.component';
+import { MakeAnAppoinmentComponent } from './features/make-an-appoinment/make-an-appoinment.component';
+import { SubscribeNewsletterComponent } from './features/subscribe-newsletter/subscribe-newsletter.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,12 +26,16 @@ import { WhatOurClientSaysComponent } from './features/what-our-client-says/what
     LetUsBrightenComponent,
     WhoWeAreComponent,
     MeetOurDoctorsComponent,
-    WhatOurClientSaysComponent
+    WhatOurClientSaysComponent,
+    MakeAnAppoinmentComponent,
+    SubscribeNewsletterComponent
   ],
   imports: [
     CommonModule,
     MainLayoutRoutingModule,
     SwiperModule,
+    FormsModule,
+    ReactiveFormsModule,
     SharedModule
   ]
 })

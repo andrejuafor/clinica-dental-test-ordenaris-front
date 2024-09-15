@@ -1,0 +1,28 @@
+<section>
+  <div class="card">
+    <h3 class="card-title">
+      Subscribe to our newsletter
+    </h3>
+    <div class="form">
+      <form [formGroup]="formGroup">
+        <div class="form-row">
+          <div class="form-group">
+            <input class="form-input input-custom" type="text" placeholder="First name" formControlName="name"
+              [class.is-invalid]="isControlInvalid('name')">
+          </div>
+          <div class="form-group">
+            <input class="form-input input-custom" type="text" placeholder="Email address" formControlName="email"
+              [class.is-invalid]="isControlInvalid('email')">
+          </div>
+          <div class="form-group">
+            <button class="btn btn-custom" (click)="validForm();">
+              Subscribe Now
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <img class="line left" src="/assets/media/icons/newsletter-line-1.svg" alt="newsletter-line-1">
+    <img class="line right" src="/assets/media/icons/newsletter-line-2.svg" alt="newsletter-line-2">
+  </div>
+</section>

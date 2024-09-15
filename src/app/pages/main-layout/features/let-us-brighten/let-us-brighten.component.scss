@@ -1,0 +1,43 @@
+@import '../../../../../assets/branding/colors.scss';
+
+section {
+  height: 492px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $blue-primary;
+  padding: 0 4em;
+  margin-bottom: 3em;
+}
+
+.title-txt {
+  color: $white;
+  margin-bottom: 0.2em;
+
+  span {
+    font-size: 42px;
+    font-weight: 500;
+    color: $white;
+  }
+}
+
+.description-txt {
+  color: $white;
+  width: 100%;
+  max-width: 904px;
+  margin-bottom: 2em;
+}
+
+.btn-custom {
+  height: 65px;
+  padding: 0 4em;
+  font-weight: normal;
+}
+
+@media (max-width: 690px) {
+  section {
+    padding: 0 1.5em;
+  }
+}

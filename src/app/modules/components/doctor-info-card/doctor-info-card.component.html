@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="doctor-profile-wrapper">
+    <img [src]="photo || '/assets/media/logos/isotipo.svg'" alt="Doctor Profile">
+  </div>
+  <p class="p-lg">
+    {{ doctorName }}
+  </p>
+  <div>
+    <p class="p-sm light-txt">
+      {{ specialty }}
+    </p>
+    <p class="p-sm light-txt supporting-txt">
+      {{ university }}
+    </p>
+  </div>
+  <button class="btn btn-blue-outline">
+    Appoinment
+  </button>
+</div>

@@ -1,0 +1,25 @@
+<section>
+  <div class="header">
+    <h2 class="header-left">
+      Meet Some of Our <br>
+      <span>Brains</span>
+    </h2>
+    <h1 class="header-right">
+      MEET OUR <span>DOCTORS</span>
+    </h1>
+  </div>
+  <div class="doctors-info-wrapper">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let item of doctorsList">
+          <app-doctor-info-card [doctorName]="item.name" [specialty]="item.specialty" [university]="item.university"
+            [photo]="item.photo">
+          </app-doctor-info-card>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>

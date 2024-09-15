@@ -1,0 +1,142 @@
+@import '../../../../../assets/branding/colors.scss';
+
+section {
+  padding: 4em 0 5em;
+  position: relative;
+  margin-bottom: 3em;
+}
+
+.background {
+  width: 595px;
+  height: 650px;
+  border-radius: 0px 0px 136px 0px;
+  background-color: $white-bg;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.titles-wrapper {
+  padding: 0 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.title {
+  width: 500px;
+}
+
+.title-colored-word {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: $yellow-primary;
+}
+
+.subtitle {
+  width: 640px;
+
+  p {
+    color: $black-777;
+  }
+}
+
+.line-container {
+  position: relative;
+  height: 1px;
+  margin: 0 4em 2em;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+}
+
+.line::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 41%;
+  background-color: $blue-primary;
+}
+
+.line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 59%;
+  background-color: $grey;
+}
+
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4em;
+}
+
+.info-illustration {
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+  }
+}
+
+.what-we-provide {
+  width: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.what-we-provide-title-txt {
+  margin-bottom: 1em;
+}
+
+.what-we-provide-list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+}
+
+.what-we-provide-list-item {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 0.5em;
+  }
+}
+
+@media (max-width: 690px) {
+
+  .titles-wrapper,
+  .info-wrapper {
+    padding: 0 1.5em;
+    flex-direction: column;
+  }
+
+  .title,
+  .subtitle,
+  .what-we-provide {
+    width: 100%;
+  }
+
+  .info-illustration {
+    max-width: 100%;
+    margin-bottom: 3em;
+  }
+}

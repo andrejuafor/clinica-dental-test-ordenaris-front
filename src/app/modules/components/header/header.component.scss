@@ -1,0 +1,18 @@
+@import '../../../../assets/branding/colors.scss';
+
+nav {
+  max-width: 1320px;
+  height: 110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $grey
+}
+
+.navbar-actions {
+  width: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

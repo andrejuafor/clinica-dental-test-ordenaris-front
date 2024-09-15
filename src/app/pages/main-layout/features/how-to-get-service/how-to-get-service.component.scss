@@ -1,0 +1,85 @@
+@import '../../../../../assets/branding/colors.scss';
+
+section {
+  height: 288px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $blue-primary;
+  padding: 0 4em;
+}
+
+.title-txt {
+  color: $white;
+  margin-bottom: 0.2em;
+}
+
+.subtitle-txt {
+  color: $white;
+}
+
+.cards-wrapper {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  width: 176px;
+  height: 160px;
+  padding: 2em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 16px;
+  background-color: $white;
+  margin: 0.5em;
+
+  img {
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 950px) {
+  section {
+    height: initial;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em 1em;
+  }
+
+  .titles-wrapper {
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 145px;
+    height: 130px;
+
+    img {
+      width: 30%;
+    }
+
+    p {
+      font-size: max(1.5vw, 13px);
+    }
+  }
+
+}
+
+@media (max-width: 428px) {
+  .cards-wrapper {
+    flex-direction: column;
+  }
+}

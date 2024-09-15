@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/branding/colors.scss';
+@import './assets/branding/buttons.scss';
+@import './assets/branding/typography.scss';
+@import './assets/branding/forms.scss';
+@import "/node_modules/angular-notifier/styles";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "Inter", sans-serif;
+  color: $black-primary;
+}
+
+a {
+  color: $black-secondary;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &.a-white {
+    color: $white;
+  }
+}
+
+a:hover {
+  color: $blue-primary;
+
+  &.a-white {
+    color: $blue-secondary;
+  }
+}
+
+ul {
+  list-style-type: none;
+}

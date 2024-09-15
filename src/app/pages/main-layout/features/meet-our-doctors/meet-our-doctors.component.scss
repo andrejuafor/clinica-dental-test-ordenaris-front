@@ -1,0 +1,53 @@
+@import '../../../../../assets/branding/colors.scss';
+
+section {
+  margin: 3em 0 0 0;
+  padding: 7em 2em;
+  position: relative;
+  background-color: $white-bg;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.header-left {
+  line-height: 51px;
+
+  span {
+    font-size: 60px;
+  }
+}
+
+.header-right {
+  span {
+    color: $yellow-primary;
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev {
+  left: 45px;
+}
+
+.swiper-button-next {
+  right: 45px;
+}
+
+.doctors-info-wrapper {
+  padding: 0 5em;
+}

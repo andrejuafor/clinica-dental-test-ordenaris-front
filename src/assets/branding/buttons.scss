@@ -33,6 +33,12 @@
     color: $white;
     border: 1px solid $white;
   }
+
+  &.btn-grey-outline {
+    background: #ffffff00;
+    color: $black-secondary;
+    border: 1px solid $black-secondary;
+  }
 }
 
 .btn:hover {
@@ -51,5 +57,11 @@
     background: #ffffff00;
     color: $blue-dark;
     border: 1px solid $blue-dark;
+  }
+
+  &.btn-grey-outline:hover {
+    background: $white-bg;
+    color: $grey;
+    border: 1px solid $white-bg;
   }
 }

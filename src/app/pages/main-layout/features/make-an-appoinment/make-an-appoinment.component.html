@@ -1,0 +1,72 @@
+<section>
+  <div class="header">
+    <h1 class="header-left">
+      MAKE AN
+      <span>APPOINMENT</span>
+    </h1>
+    <h2 class="header-right">
+      Consult with our <br><span>Doctor</span>
+    </h2>
+  </div>
+  <div class="body-section">
+    <div class="banner">
+      <img src="/assets/media/img/make-an-appoinment-illustration.png" alt="make an appoinment illustration">
+    </div>
+    <div class="form">
+      <form [formGroup]="formGroup">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Name*</label>
+            <input class="form-input" type="text" placeholder="Full name" formControlName="name"
+              [class.is-invalid]="isControlInvalid('name')">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone*</label>
+            <div class="phone-container" [class.is-invalid]="isControlInvalid('phone')">
+              <select class="phone-code" formControlName="phone_code">
+                <option value="+1">+01</option>
+                <option value="+44">+44</option>
+                <option value="+34">+34</option>
+                <option value="+52">+52</option>
+              </select>
+              <input type="tel" class="phone-number" maxlength="14" appOnlyNumbers placeholder="(555) 000-0000"
+                formControlName="phone">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Date*</label>
+            <input class="form-input" type="date" placeholder="Full name" formControlName="date" [min]="tomorrowDate"
+              [class.is-invalid]="isControlInvalid('date')">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Doctor*</label>
+            <select class="form-input" formControlName="doctor" [class.is-invalid]="isControlInvalid('doctor')">
+              <option value="" selected>- Select a Doctor -</option>
+              <option [value]="item.name" *ngFor="let item of doctorsList">{{ item.name }}</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Message*</label>
+            <textarea class="form-input" formControlName="message" rows="5" placeholder="Include a message..."
+              formControlName="message" [class.is-invalid]="isControlInvalid('message')"></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="agree-checkbox" class="form-label" [class.is-invalid]="isControlInvalid('privacy_check')">
+            <input type="checkbox" name="agree-checkbox" id="agree-checkbox" formControlName="privacy_check">
+            You agree to our friendly privacy policy.
+          </label>
+        </div>
+        <div>
+          <button class="btn btn-blue-primary btn-complete" (click)="validForm();">
+            Confirm Appoinment
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
